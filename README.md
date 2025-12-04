@@ -27,6 +27,10 @@ pipx install git+https://github.com/ogpourya/crumbix.git
 
 ## Usage
 
+> ⚠️ **Important Note:** Crumbix filters by **domain only**, not by specific URL path. 
+> 
+> If you enter `https://example.com/login`, it will save cookies for **all** of `example.com` (including `/`, `/api`, etc.). The specific path is saved in the file but is not used to filter the cookies.
+
 **Basic:**
 
 ```bash
