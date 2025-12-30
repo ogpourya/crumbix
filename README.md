@@ -6,23 +6,18 @@ A cross-platform CLI tool to extract browser cookies for any URL and save them i
 
 ## Installation
 
-This tool is best installed via `pipx` to keep dependencies isolated.
+This tool is best installed via `uv` to keep dependencies isolated.
 
-**1. Install pipx (if you don't have it):**
+**1. Install uv (if you don't have it):**
 
-```bash
-python3 -m pip install --user pipx
-python3 -m pipx ensurepath
-```
-
-*Restart your terminal after running the above.*
+[Getting Started Installation](https://docs.astral.sh/uv/getting-started/installation/)
 
 **2. Install Crumbix:**
 
 Since the package is not on PyPI, install directly from GitHub:
 
 ```bash
-pipx install git+https://github.com/ogpourya/crumbix.git
+uv tool install https://github.com/ogpourya/crumbix.git
 ```
 
 ## Usage

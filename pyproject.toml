@@ -1,0 +1,20 @@
+[project]
+name = "crumbix"
+version = "1.0.0"
+description = "A cross-platform CLI tool to extract browser cookies for any URL and save them in Netscape `cookies.txt` format."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "browser-cookie3>=0.20.1",
+    "click>=8.3.1",
+    "rich>=14.2.0",
+    "tldextract>=5.3.1",
+]
+
+[project.scripts]
+crumbix = "crumbix.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crumbix*"]
+exclude = ["screenshots*"]
